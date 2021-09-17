@@ -49,7 +49,7 @@ namespace ManksEncrypter
             string Website = txtWebsite.Text;
             string Username = txtUserName.Text;
             string Password = txtPassword.Text;
-            string filePath = @"data.txt";
+            string filePath = @"data.sql";
             if (!File.Exists(filePath))
             {
                 FileStream fs = File.Create(filePath);
@@ -104,7 +104,7 @@ namespace ManksEncrypter
         private void btnShowPass_Click(object sender, EventArgs e)
         {
             txtWebsite.Focus();
-            string filePath = @"data.txt";
+            string filePath = @"data.sql";
             char delimiter = ',';
             if (!File.Exists(filePath))
             {
@@ -140,7 +140,7 @@ namespace ManksEncrypter
         }
         private void btnRemove_Click(object sender, EventArgs e)
         {
-            string filePath = @"data.txt";
+            string filePath = @"data.sql";
             string remove = txtRemove.Text.ToLower();
             if (!File.Exists(filePath))
             {
